@@ -1,0 +1,213 @@
+@font-face{
+    font-family: HankenGrotesk;
+    src: url(./design/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+body{
+    background-color: #fff;
+}
+.main{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.geral{
+    display: flex;
+    font-family:HankenGrotesk, Arial, Helvetica, sans-serif; 
+    border: #0fad69 solid 2px;
+    border: 0px solid #fff;
+    box-shadow: #bdb8b8 3px 5px 5px 5px;
+    border-radius: 20px;
+    border-left: none;
+    
+}
+.pontos{
+    background-color:  rgb(116, 53, 218);
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+    border: 2px solid rgb(116, 53, 218);
+    padding: 20px;
+    border-radius: 20px;
+    width: 300px;
+}
+.pontos h1{
+    font-weight: 200;
+    padding-bottom: 5%;
+}
+.pontos .marcação{
+    border: 2px solid rgb(94, 45, 172) ;
+    height: 150px;
+    width: 150px;
+    margin: auto;
+    padding-top: 25px;
+    border-radius: 80%;
+    background-color: rgb(94, 45, 172);
+}
+.pontos .marcação p::first-line{
+    font-weight: 700;
+    font-size: 40px;
+}
+.pontos .marcação p span{
+    opacity: 50%;
+}
+.pontos h2{
+    font-weight: 700;
+    padding: 20px;
+}
+.pontos p{
+    padding: 10px ;
+}
+/*------------------------------------------------------------------------------------*/
+
+.sumario{
+    padding: 30px;
+}
+.sumario h3{
+    font-weight: 600;
+    padding-bottom: 20px;
+    text-align: left ;
+}
+.sumario ul li{
+    width: 100%;
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px 20px 20px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.sumario ul li h4{
+    display: flex;
+    align-items: center;
+    padding: 0px 5px;
+    font-weight: 700;
+}
+.sumario ul li img{
+    padding-right: 10px;
+}
+.sumario ul li p{
+    padding-left: 50px;
+    font-weight: 600;
+    
+}
+.sumario ul li p span{
+    font-weight: 600;
+    opacity: 50%;
+    
+}
+
+.sumario input{
+    width: 100%;
+    border: 2px solid rgb(53, 53, 53);
+    padding: 10px 50px;
+    border-radius: 60px;
+    background-color: rgb(53, 53, 53);
+    color: #fff;
+    transition: 0.6S;
+}
+.sumario input:hover{
+    background-color: rgb(116, 53, 218);
+    color: #fff;
+}
+.sumario p img{
+    padding-right: 5px;
+}
+.sumario .reaction{
+    color: #f44336
+}
+.sumario .merory{
+    color: rgb(192, 192, 9);
+}
+.sumario .verbal{
+    color: #0fad69
+}
+.sumario .visual{
+    color: rgb(116, 53, 218);
+}
+.sumario #reaction{
+    border: none;
+    background-color: #f5dfdd;
+}
+.sumario #memory{
+    border: none;
+    background-color:rgb(238, 238, 174);
+}
+.sumario #verbal{
+    border: none;
+    background-color: #c3e9d9;
+}
+.sumario #visual{
+    border: none;
+    background-color:  rgb(213, 202, 231);
+}
+
+/*-----------------------------RESPONSIVO--------------------------------------------------*/
+@media (max-width: 570px){
+    .main{
+        width: 100%;
+        height: 100%;
+        margin-top: 0;
+    }
+    .geral{
+        display: block; 
+        height: 100vh;
+        border-radius: 0px;
+        border: none;
+        box-shadow: none;
+    }
+    .geral .pontos{
+        width: 100%;
+        border-radius: 0px 0px 40px 40px;     
+    }
+    .geral .pontos h1{
+        padding: 5%;
+        margin-top: -10px;
+        font-size: 25px;
+    }
+    .geral .pontos h2{
+        padding: 5%;
+        font-size: 30px;
+    }
+    .geral .pontos p{
+        font-size: 18px;
+    }
+    .geral .marcação{
+        height: 150px;
+        width: 150px;
+        padding: 15px;
+        margin: auto;
+        padding-top: 5%;
+    }
+    .pontos .marcação p::first-line{
+        font-size: 50px;
+    }
+    .sumario{
+        width: 100vw;
+        border: none;
+        padding: 30px;
+        border: none;
+        box-shadow: none;
+       
+    }
+    .sumario h3{
+        padding: 5%;
+    }
+    .sumario  ul li{
+        margin: auto;
+        margin-top:  5%;
+        margin-bottom:  5%;
+        padding: 5%;
+        width: 90%;
+    }
+    .sumario input{
+        width: 90%;
+        margin-top:  5px;
+        margin-left: 5%;
+        padding: 15px;
+    }
+
+    
+}
+
